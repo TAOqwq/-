@@ -1,0 +1,30 @@
+# -
+0.0
+#include "stdio.h"
+#include "string.h"
+  int main()
+  {
+	  char str[200],substr[20];
+	  int i, j, l;int count;
+	  printf("请输入主串");
+	  gets(str);
+	  l=strlen(str);
+	  printf("请输入子串");
+	  gets(substr);
+	  for(i=0;i<1;i++)
+	  {
+		  for(j=0;substr[j];j++)
+		  {
+			  if(str[i+j]=substr[j]){
+
+				  break;
+			  }
+		  }
+		  if(substr[j]==0)
+		  {
+			  count++;
+		  }
+	  }
+	  printf("%s在%s中出现的次数为：%d");
+	  return 0;
+  }
